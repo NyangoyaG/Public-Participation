@@ -20,9 +20,8 @@ COPY --chown=user . .
 RUN python -m ipykernel install --user --name=python3
 
 # Tell Jupyter to trust the notebook to remove the "not trusted" warning
-RUN jupyter trust "Public Opinion.ipynb"
 
 EXPOSE 7860
 
 # Clean startup command
-CMD ["voila", "Public Opinion.ipynb", "--port=7860", "--no-browser", "--Voila.ip=0.0.0.0"]
+CMD ["voila", "Public_Opinion.ipynb", "--port=7860", "--no-browser", "--Voila.ip=0.0.0.0"]
