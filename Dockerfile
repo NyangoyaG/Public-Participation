@@ -24,5 +24,5 @@ RUN jupyter trust "Public Opinion.ipynb"
 
 EXPOSE 7860
 
-# Added flags to remove the SSL and origin warnings
-CMD ["voila", "Public Opinion.ipynb", "--port=7860", "--no-browser", "--Voila.ip=0.0.0.0", "--Voila.tornado_settings={\"headers\":{\"Content-Security-Policy\":\"frame-ancestors 'self' https://*.onrender.com\"}}", "--Voila.allow_origin=*", "--Voila.disable_check_xsrf=True"]
+# Clean startup command
+CMD ["voila", "Public Opinion.ipynb", "--port=7860", "--no-browser", "--Voila.ip=0.0.0.0"]
