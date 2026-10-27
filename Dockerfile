@@ -10,6 +10,7 @@ WORKDIR $HOME/app
 COPY --chown=user . $HOME/app
 
 RUN pip install --no-cache-dir ipywidgets voila
+RUN python -m ipykernel install --user --name=python3
 
 EXPOSE 7860
 
