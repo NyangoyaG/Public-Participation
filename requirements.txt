@@ -1,3 +1,5 @@
 ipywidgets
 voila
 ipykernel
+gspread
+oauth2client
