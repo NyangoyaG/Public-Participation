@@ -22,4 +22,4 @@ RUN python -m ipykernel install --user --name=python3
 EXPOSE 7860
 
 # Run Voila
-CMD ["voila", "Public Opinion.ipynb", "--port=7860", "--no-browser", "--Voila.ip=0.0.0.0"]
+CMD ["voila", "Public_Opinion.ipynb", "--port=7860", "--no-browser", "--Voila.ip=0.0.0.0"]
