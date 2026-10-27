@@ -3,3 +3,4 @@ voila
 ipykernel
 gspread
 oauth2client
+requests
